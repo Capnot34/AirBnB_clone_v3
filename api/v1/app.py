@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-"""app"""
+"""
+    create a file app.py:
+
+    create a variable app, instance of Flask
+    import storage from models
+    import app_views from api.v1.views
+    register the blueprint app_views to your Flask instance app
+"""
 from flask import Flask, make_response, jsonify
 from models import storage
 from api.v1.views import app_views
